@@ -2,32 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.paragraph {
+   @apply text-primary text-xl lg:text-2xl lg:leading-9 font-light
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bg-cover {
+   background: url("/images/cover.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.article-content::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   background: linear-gradient(180deg, rgba(0, 0, 0, .25) -17.98%, rgba(0, 0, 0, .5));
+   top: 0;
+   height: 100%;
+   width: 100%;
+   z-index: 1;
+   border-radius: 1.25rem;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.article-content:hover .article-img{
+   transform: scale(1.1);
+}
+.hover-transition{
+   transition: .5s;
+   /* transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+   transition-timing-function: cubic-bezier(.4,0,.2,1); */
+}
+.hover-transition:hover{
+   border-color: transparent;
 }

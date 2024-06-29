@@ -1,7 +1,22 @@
-import { Inter } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/ui/Navbar";
+import Footer from "@/components/layout/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const noto_sans = Noto_Sans({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+const ztgatha = localFont({
+  src: [
+    {
+      path: "../../public/font/ztgatha-semibold.ttf",
+    }
+  ],
+  variable: "--font-ztgatha"
+  
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +26,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${noto_sans.className} ${ztgatha.variable}`}>
+        <Navbar/>
+        {children}
+        <Footer/>
+        </body>
     </html>
   );
 }
