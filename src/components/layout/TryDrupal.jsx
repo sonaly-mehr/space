@@ -30,19 +30,19 @@ const TryDrupal = () => {
     },
   ];
   return (
-    <div className="container mx-auto ">
+    <div className="container ">
       <div className="bg-cover px-4 py-8 2xl:px-14 2xl:py-16">
-        <div className="bg-secondary pl-8 lg:pl-[3.2rem] pr-8 lg:pr-[3.8rem] pt-8 lg:pt-[65px] pb-8 lg:pb-14 flex flex-col md:flex-row md:justify-between text-white rounded-[1.25rem] md:gap-10 lg:gap-28">
-          <h2 className="text-3xl lg:text-[2.75rem] xl:text-[2.75rem] 2xl:text-[4rem] leading-[40px] lg:leading-[44px] 2xl:leading-[4.3rem] tracking-[-.02em] font-bold flex-1">
+        <div className="bg-secondary pl-8 lg:pl-[3.2rem] pr-8 lg:pr-[3.8rem] pt-8 xl:pt-[65px] pb-8 xl:pb-14 flex flex-col md:flex-row md:justify-between text-white rounded-[1.25rem] md:gap-10 lg:gap-28">
+          <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] xl:text-[2.75rem] 2xl:text-[4rem] leading-[40px] md:leading-[44px] 2xl:leading-[4.3rem] tracking-[-.02em] font-bold flex-1">
             Ready to try Drupal?{" "}
           </h2>
           <div className="flex-1 flex flex-col justify-end">
-            <p className="text-[1.125rem] leading-[28px] xl:leading-8 xl:text-xl font-normal mt-4 lg:mt-0 mb-6">
+            <p className="text-[1.125rem] md:text-xl leading-[28px] md:leading-8 xl:text-xl font-normal mt-4 lg:mt-0 mb-6">
               Morbi nec metus. In consectetuer turpis ut velit. Etiam feugiat
               lorem non metus. Donec vitae sapien ut libero venenatis faucibus.
               Nunc nec neque.
             </p>
-            <Button text="Learn more" className="w-full lg:w-fit" />
+            <Button text="Learn more" className="w-full md:w-fit" />
           </div>
         </div>
 

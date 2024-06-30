@@ -8,13 +8,13 @@ module.exports = {
   theme: {
     extend: {
       container: {
-        padding: {
-          DEFAULT: "1rem",
-          sm: "1.5rem",
-          lg: "2.5rem",
-          xl: "5rem",
-          "2xl": "7rem",
-        },
+        // padding: {
+        //   DEFAULT: "1rem",
+        //   sm: "1.5rem",
+        //   lg: "2.5rem",
+        //   xl: "5rem",
+        //   "2xl": "7rem",
+        // },
       },
       fontFamily: {
         ztgatha: ["var(--font-ztgatha)"],

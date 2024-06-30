@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+
+.container {
+   @apply w-full mx-auto px-4 sm:max-w-full md:max-w-full md:px-[1.875rem]
+}
+
 .paragraph {
    @apply text-primary text-xl lg:text-2xl lg:leading-9 font-light
 }
@@ -25,14 +30,62 @@
    z-index: 1;
    border-radius: 1.25rem;
 }
-.article-content:hover .article-img{
+
+.article-content:hover .article-img {
    transform: scale(1.1);
 }
-.hover-transition{
+
+.hover-transition {
    transition: .5s;
    /* transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
    transition-timing-function: cubic-bezier(.4,0,.2,1); */
 }
-.hover-transition:hover{
+
+.hover-transition:hover {
    border-color: transparent;
+}
+
+@media (min-width: 1706px) {
+   .container {
+      max-width: 1706px !important;
+   }
+}
+
+@media (min-width: 1280px) {
+   .container {
+      padding-left: 0;
+      padding-right: 0;
+   }
+}
+
+@media (min-width: 1248px) {
+   .container {
+      max-width: 1248px;
+   }
+}
+
+@media (min-width: 1200px) {
+   .responsive-grid-cols {
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+   }
+
+   .content-layout {
+      flex-direction: row !important;
+   }
+
+   .drupal-descp {
+      max-width: 32% !important
+   }
+}
+
+@media (min-width: 992px) {
+   .flex-layout {
+      flex: 0 1 calc(50% - 15px)
+   }
+}
+
+@media (min-width: 768px) {
+   .flex-layout {
+      flex: 0 1 calc(50%)
+   }
 }

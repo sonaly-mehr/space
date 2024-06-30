@@ -20,13 +20,13 @@ const PowerOfDrupal = () => {
     },
   ];
   return (
-    <div className="container mx-auto py-16">
-      <div className="flex flex-col xl:flex-row justify-between">
-        <h1 className="font-bold text-primary text-[5rem] lg:text-[9.375rem] leading-[100%] lg:leading-[10.375rem] tracking-[-7px] xl:tracking-[-14px] mb-14 xl:mb-0">
+    <div className="container py-16">
+      <div className="flex flex-col xl:flex-row justify-between content-layout">
+        <h1 className="font-bold text-primary text-[5rem] lg:text-[9.375rem] leading-[100%] lg:leading-[10.375rem] tracking-[-7px] xl:tracking-[-14px] mb-12 xl:mb-0">
           The Power <br />
           of Drupal
         </h1>
-        <p className="paragraph xl:max-w-[35%]">
+        <p className="paragraph xl:max-w-[35%] drupal-descp">
           Learn why Drupal powers one in 40 websites in the world including
           sites from Tesla, Pfizer and NBC.
         </p>
@@ -41,7 +41,7 @@ const PowerOfDrupal = () => {
         />
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-14">
+      <div className="flex flex-col xl:flex-row justify-between gap-10 lg:gap-14">
         <div className="flex-1">
           <Image
             src="/images/tesla.png"
