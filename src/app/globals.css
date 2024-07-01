@@ -76,6 +76,12 @@
    .drupal-descp {
       max-width: 32% !important
    }
+   .flex-layout {
+      flex: 0 1 33.33% !important
+   }
+   /* .p-margin{
+      margin: 0% !important;
+   } */
 }
 
 @media (min-width: 992px) {
